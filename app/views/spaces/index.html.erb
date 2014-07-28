@@ -1,0 +1,51 @@
+<br/>
+<br/>
+<br/>
+<br/>
+<% if user_signed_in? %>
+
+<div id="hoods">
+
+
+	<h4>Date Today: </h4><%=Time.now.strftime "%Y-%m-%d %H:%M:%S %z" %>
+
+
+	<h2> Spaces Spaces Spaces!!!</h2>
+
+</div>
+
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+
+
+<%@spaces.each do |spaces|%>
+
+
+<h2><%=spaces.name%></h2><br>
+	<%=spaces.neighborhood%><br>
+	<%=spaces.sq_footage%><br>
+	<%=spaces.features%><br>
+	<%=spaces.rate%><br>
+	<%=spaces.contact%>
+
+	
+<%= image_tag(spaces.photo_url) %>
+
+<% end %>
+<% end %> <br>
+
+<%= will_paginate @spaces %>
+ 
+<%if !user_signed_in?%>
+
+<p>Please sign in to view our available spaces</p>
+
+<% end %>
+
+

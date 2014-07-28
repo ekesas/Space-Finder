@@ -1,0 +1,25 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3><a href="/neighborhoods/"><%= @neighborhood.name%></h3></a>
+	
+<h2><a href="/neighborhoods/<%= @neighborhood.id %>" <%= @neighborhood.name %> </a></h2>
+
+<ul>
+	<% @spaces.each do |space| %>
+	
+	<h3><a href="/spaces/<%= space.id %>"><%=space.name%></a></h3><br>
+	<%=space.address%><br>
+	<%=space.neighborhood%><br>
+	<%=space.sq_footage%><br>
+	<%=space.features%><br>
+	<%=space.rate%><br>
+	<%=space.contact%>
+		
+	<%end%>
+</ul>
+	
+

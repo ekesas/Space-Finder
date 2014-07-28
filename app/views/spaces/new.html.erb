@@ -1,0 +1,26 @@
+<br/>
+<br/>
+<br/>
+<br/>
+
+<%if user_signed_in?%>
+
+<div id="hoods"
+
+<h3>List your Space here</h3>
+
+</div>
+
+<br>
+
+<br>
+
+<%= render "form" %>
+
+<% end %>
+
+<%if !user_signed_in?%>
+
+<p>Please sign in to list your space</p>
+
+<% end %>

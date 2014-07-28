@@ -1,0 +1,25 @@
+<br/>
+<br/>
+<br/>
+<br/>
+
+	<h2><%= @spaces.name %> </h2>
+	<li><%= @spaces.address%> </li>
+	<li><%= @spaces.neighborhood_id%> </li>
+	<li><%= @spaces.sq_footage%> </li>
+	<li><%= @spaces.features%> </li>
+	<li><%= @spaces.rate%> </li>
+	<li><%= @spaces.contact%> </li>
+	
+	<%= image_tag(@spaces.photo_url)%> <br>
+	<br>
+	<br>
+
+	<input type="button" value="Contact Owner for additional info" class="btn primary">
+
+	<ul class="pager">
+  
+  <li><a href="#">Previous</a></li>
+  <li><a href="#">Next</a></li>
+  </ul>
+

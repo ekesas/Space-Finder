@@ -1,4 +1,43 @@
 Rails.application.routes.draw do
+
+  devise_for :users
+
+  root 'spaces#home'
+
+  get '/spaces' =>'spaces#index'
+
+  get '/spaces/new' => 'spaces#new'
+
+  post '/spaces' =>'spaces#create'
+
+  get'/spaces/:id' =>'spaces#show', as: :space
+
+  get '/spaces/:id/edit' => 'spaces#edit'
+
+  patch '/spaces/:id' => 'spaces#update'
+
+  delete '/spaces/:id' => 'spaces#destroy'
+
+
+
+  get '/neighborhoods' =>'neighborhoods#index'
+
+  get '/neighborhoods/new' => 'neighborhoods#new'
+
+  post '/neighborhoods' =>'neighborhoods#create'
+
+  get'/neighborhoods/:id' =>'neighborhoods#show', as: :neighborhood
+
+  get '/neighborhoods/:id/edit' => 'neighborhoods#edit'
+
+  patch '/neighborhoods/:id' => 'neighborhoods#update'
+
+  delete '/neighborhoods/:id' => 'neighborhoods#destroy'
+
+
+resources :api
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
