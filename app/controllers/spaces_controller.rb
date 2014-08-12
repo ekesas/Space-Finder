@@ -1,22 +1,17 @@
-require 'open_weather'
-
 
 class SpacesController < ApplicationController
-
 	
-	
-	def index
 
-		@spaces=Space.all
+  def index
 
-		@spaces = Space.paginate :page =>params[:page], :per_page => 4
+			@spaces=Space.all
 
-	
+			@spaces = Space.paginate :page =>params[:page], :per_page => 4
 	end 
 
 	def show 
 
-		@spaces = Space.find_by(:id => params[:id])
+		@space = Space.find_by(:id => params[:id])
 
 	end 
 
@@ -58,17 +53,7 @@ class SpacesController < ApplicationController
 		redirect_to'/spaces'
 	end 
 
-	def search
-		
-  @spaces = Space.search params[:search]
-	end
-
-	
 end 
 
-# private 
 
-# def space_params
-
-	# return params.require(:space).permit(:name, :address, :neighborhood, :sq_footage, :features, :photo_url, :rate, :contact, :neighborhood_id)
 

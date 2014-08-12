@@ -8,18 +8,15 @@
 	
 <h2><a href="/neighborhoods/<%= @neighborhood.id %>" <%= @neighborhood.name %> </a></h2>
 
-<ul>
+
 	<% @spaces.each do |space| %>
-	
-	<h3><a href="/spaces/<%= space.id %>"><%=space.name%></a></h3><br>
-	<%=space.address%><br>
-	<%=space.neighborhood%><br>
-	<%=space.sq_footage%><br>
-	<%=space.features%><br>
-	<%=space.rate%><br>
-	<%=space.contact%>
-		
-	<%end%>
-</ul>
+
+  <h3>Name<a href="/spaces/<%= space.id %>"> <%=space.name%></a> </h3><br>
+
+	<a href= "/spaces/<%= space.id %>"> <%= image_tag(space.photo_url, :size => "400x400") %> </a>
+	<%end%> <br>
+	<br>
+
+
 	
 

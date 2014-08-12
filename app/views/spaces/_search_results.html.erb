@@ -1,0 +1,6 @@
+<ul>
+    <% @grants.each do |space| %>
+  <li><%= link_to space.title, 
+    :action => 'show', :id => space.id  %></li>
+  <% end %>
+ </ul>

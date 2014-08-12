@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   root 'spaces#home'
 
+  get '/search' => 'search#search'
+
   get '/spaces' =>'spaces#index'
 
   get '/spaces/new' => 'spaces#new'

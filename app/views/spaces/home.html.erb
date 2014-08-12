@@ -2,16 +2,29 @@
 <br/>
 <br/>
 <br/>
-
+<div id="container"
 <%if user_signed_in?%>
 
 <p>Welcome to spacefinder <%=current_user.email%>!! </P>
 
 	<% end %>
 
+<P> YourSpace Chicago is a free, database of arts venues and facilities for rent in the Chicagoland area. Find a space for your next performance, rehearsal, audition, class, or special event. Search by location, rate, venue size and much more! </p><br>
+	<br>
+	<br>
 
 
-<P> Feel free to use the searh option above to narrow your search to your liking </p>
+	<div class ="col-md-6"> Search by Neighborhood </div>
+	<div class ="col-md-6"> Search by Space Name </div>
+
+
+
+<a href="/neighborhoods/"><%= image_tag("chicagohoodmap.jpg",:size =>"450x450")%>
+
+<a href="/spaces/"><%= image_tag("homespace.jpg",:size =>"450x450")%><br>
+	<br>
+	<br>
+	
 
 	
 	

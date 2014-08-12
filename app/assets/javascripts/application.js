@@ -15,3 +15,14 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+// var photos = [photo_url, photo_url1, photo_url2, photo_url3, photo_url4]
+
+// function photoSwitch(){
+
+// 	clickedPhoto=[0]; 
+// 	photos[0] = photos[4]
+
+// 	console.log("Photos");
+
+// }

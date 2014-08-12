@@ -6,10 +6,6 @@
 
 <div id="hoods">
 
-
-	<h4>Date Today: </h4><%=Time.now.strftime "%Y-%m-%d %H:%M:%S %z" %>
-
-
 	<h2> Spaces Spaces Spaces!!!</h2>
 
 </div>
@@ -23,25 +19,18 @@
 <br>
 
 
+<% @spaces.each do |space|%>
 
-<%@spaces.each do |spaces|%>
-
-
-<h2><%=spaces.name%></h2><br>
-	<%=spaces.neighborhood%><br>
-	<%=spaces.sq_footage%><br>
-	<%=spaces.features%><br>
-	<%=spaces.rate%><br>
-	<%=spaces.contact%>
-
-	
-<%= image_tag(spaces.photo_url) %>
+<h3><a href="/spaces/<%= space.id %> "<h3><%=space.name%></h3><br>
+<%= image_tag(space.photo_url, :size => "600x600", :onclick => "photoSwitch") %>
+<br>
+	<h3><%=space.neighborhood%><br>
+	<h3>Rate</h3><%=space.rate%><br>
+	<a href="/spaces/<%= space.id %> ">Click here for more info<a/>
 
 <% end %>
 <% end %> <br>
 
-<%= will_paginate @spaces %>
- 
 <%if !user_signed_in?%>
 
 <p>Please sign in to view our available spaces</p>

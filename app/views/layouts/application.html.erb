@@ -6,12 +6,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 
 <body>
-  
-<div id="header"
+
+<div id="header">
   <nav class="navbar navbar-inverse" role="navigation">
     <div class="container-fluid" id="main-navbar">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -23,12 +24,12 @@
           <span class="icon-bar"></span>
         </button>
         <a id="logo1" class="navbar-brand" href="/">EUR Space Chicago</a> 
-
+        
         
         <ul class="nav navbar-nav navbar-right">
-          
+
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="options-nav">Search By<b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="options-nav">Welcome<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <% if current_user.nil? %>
                 <li><a href="/users/sign_up">Sign Up</a></li>
@@ -36,14 +37,12 @@
               <% end %>
               
               <% if current_user %>
-                <li><a href="http://localhost:3000/neighborhoods">Neighborhood</a></li>
-                <!-- <li class="divider"></li> -->
-                <li><a href="/">Square Footage</a></li>
-                <li><a href="/">Features</a></li>
-                <li><a href="/">Rate</a></li>
-                <li><a href="/">Reviews</a></li>
+                <li><a href="/users/edit">Edit Your Profile</a></li>
+                <li><a href="/spaces/new">List a Space</a></li>
+                <li><a href="/spaces">Find a Space</a></li>
+              
                 
-              <% end %>
+              <% end %> 
             </ul>
           </li>
         </ul>
@@ -57,6 +56,8 @@
           
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="options-nav">Options<b class="caret"></b></a>
+            <br>
+          
             <ul class="dropdown-menu">
               <% if current_user.nil? %>
                 <li><a href="/users/sign_up">Sign Up</a></li>
@@ -64,16 +65,14 @@
               <% end %>
               
               <% if current_user %>
-                <li><a href="/users/edit">Edit Profile</a></li>
-                <!-- <li class="divider"></li> -->
-                <li><a href="http://localhost:3000/">Home</a></li>
-                <li><a href="http://localhost:3000/spaces/">Spaces</a></li>
-                <li><a href="http://localhost:3000/spaces/new">List a Space</a></li>
+              
+                <li><a href="/">Home</a></li>
+                <li><a href="/neighborhoods/">Neighborhoods</a></li>
+                <li><a href="/spaces/">Spaces</a></li>
+                
                 <li><a href="/">Square Footage</a></li>
                 <li><a href="/">Features</a></li>
                 <li><a href="/">Rate</a></li>
-                <li><a href="/">Reviews</a></li>
-                
                 <%= link_to "....Sign Out", destroy_user_session_path, :method => :delete %>
 
               <% end %>
@@ -89,6 +88,7 @@
   </div >
 
   
+  
 	<% if notice %>
 	  <p class="alert alert-success"><%= notice %></p>
 	<% end %>
@@ -102,11 +102,11 @@
 
   </div>
 
-  <div class="panel panel-default">
-  <div class="panel-body">
-    <% "\u00A9" %>
-  </div>
-  <div class="panel-footer">Panel footer</div>
+<div class="row">
+    <a href= ""><div class="col-md-3"><p> How it works</div></a>
+    <a href= ""><div class="col-md-3"><p> About Us </div></a>
+    <a href= ""><div class="col-md-3"><p> Terms and Contitions </div></a>
+    <a href= ""><div class="col-md-3"><p> Connect with Us </div></a>
 </div>
 
 

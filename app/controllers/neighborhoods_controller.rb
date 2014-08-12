@@ -7,8 +7,8 @@ class NeighborhoodsController < ApplicationController
 		@neighborhoods=Neighborhood.all
 
 		@neighborhoods = Neighborhood.paginate :page =>params[:page], :per_page => 4
-
-	end 
+      
+  end
 
 	def show 
 
@@ -60,7 +60,7 @@ class NeighborhoodsController < ApplicationController
 
 	end 
 
+end
 
-end 
 
 
