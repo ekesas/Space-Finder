@@ -2,29 +2,42 @@
 <br/>
 <br/>
 <br/>
-<div id="container"
-<%if user_signed_in?%>
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<%if user_signed_in?%>
+			
+			<p>Welcome to spacefinder <%=current_user.email%>!! </p>
 
-<p>Welcome to spacefinder <%=current_user.email%>!! </P>
+		<% end %>
 
-	<% end %>
+		<p> YourSpace Chicago is a free, database of arts venues and facilities for rent in the Chicagoland area. Find a space for your next performance, rehearsal, audition, class, or special event. Search by location, rate, venue size and much more! </p><br>
+			<br>
+			<br>
+		</div>
+	</div>
 
-<P> YourSpace Chicago is a free, database of arts venues and facilities for rent in the Chicagoland area. Find a space for your next performance, rehearsal, audition, class, or special event. Search by location, rate, venue size and much more! </p><br>
-	<br>
-	<br>
+<div class="row">
+	<div class="col-md-6 center">
+		<h3>Search by Neighborhood</h3> 
+		<a href="/neighborhoods/"><%= image_tag("chicagohoodmap.jpg",:size =>"450x450")%>
+	</div>
+	<div class="col-md-6 center"> 
+		<h3>Search by Space Name</h3>
+		<a href="/spaces/"><%= image_tag("homespace.jpg",:size =>"450x450")%>
+
+	</div>
+</div>
 
 
-	<div class ="col-md-6"> Search by Neighborhood </div>
-	<div class ="col-md-6"> Search by Space Name </div>
 
+		
 
+			<br>
+			<br>
+			<br>
+	</div>
+</div>
 
-<a href="/neighborhoods/"><%= image_tag("chicagohoodmap.jpg",:size =>"450x450")%>
-
-<a href="/spaces/"><%= image_tag("homespace.jpg",:size =>"450x450")%><br>
-	<br>
-	<br>
-	
 
 	
 	

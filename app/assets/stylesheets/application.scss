@@ -14,14 +14,26 @@
  *= require_self
  */
 
-#header{position:fixed; width:1000px; margin-top:0px; height:100px; background-color:#0B173B; }
+/*#header{position:fixed; width:1000px; margin-top:0px; height:100px; background-color:#0B173B; }*/
 
-h1{text-align:center; color:black; font-family:Arial; 
+h1 {
+	text-align: center; 
+	color: black;
+	font-family: Arial; 
 }
-a {text-decoration:none;}
 
-body {width:1200px; margin:auto; background-image: image-url("Chicago2.jpg"); background-attachment:fixed; background-size:cover; color:black; margin-left:150px;
+a {
+	text-decoration: none;
+}
 
+body {
+	/*width: 1200px; */
+	/*margin: auto; */
+	background-image: image-url("Chicago2.jpg"); 
+	background-attachment: fixed;
+	background-size:cover; 
+	color:black;
+	/*margin-left:150px;*/
 }
 
  h4{display:inline; color:white;text-decoration:none;padding:10px; margin-left:40px;
@@ -33,15 +45,35 @@ body {width:1200px; margin:auto; background-image: image-url("Chicago2.jpg"); ba
 
 h3{font-family:Arial; color:black;}
 
-#container{width:1000px;}
+#container{
+	/*width:1000px;*/
+}
 
 
 #hoods{position:fixed; font-family:Arial; font-size:25px;}
 
 img{border:5px solid white;}
 
-.row{height:200px;background:#120A2A; width:1100px; margin-botton:0px;
+.row{
+	/*height:200px;background:#120A2A; width:1100px; margin-botton:0px;*/
 
+}
+
+.center {
+	text-align: center;
+}
+
+footer {
+    color: #666;
+    background: #222;
+    padding: 17px 0 18px 0;
+    border-top: 1px solid #000;
+}
+footer a {
+    color: #999;
+}
+footer a:hover {
+    color: #efefef;
 }
 
 

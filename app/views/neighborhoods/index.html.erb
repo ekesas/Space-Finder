@@ -6,27 +6,27 @@
 
 <% if user_signed_in?%>
 
-<div id="hoods"
+	<div id="hoods">
 
-<h2> Spaces by Neighborhood!!!</h2>
-
-
-</div> <br>
-
-<br>
+	<h2> Spaces by Neighborhood!!!</h2>
 
 
-<%@neighborhoods.each do |neighborhood|%>
+	</div> <br>
 
- 
-	<h3><a href="/neighborhoods/<%= neighborhood.id %>"><%= neighborhood.name %></a></h3><br>
-
-	
-	<a href= "/neighborhoods/<%= neighborhood.id %>"> <%= image_tag(neighborhood.photo_url) %> </a>
+	<br>
 
 
+	<%@neighborhoods.each do |neighborhood|%>
 
-<% end %>
+	 
+		<h3><a href="/neighborhoods/<%= neighborhood.id %>"><%= neighborhood.name %></a></h3><br>
+
+		
+		<a href= "/neighborhoods/<%= neighborhood.id %>"> <%= image_tag(neighborhood.photo_url) %> </a>
+
+
+
+	<% end %>
 <% end %> <br>
 
 <%= will_paginate @neighborhoods %>
