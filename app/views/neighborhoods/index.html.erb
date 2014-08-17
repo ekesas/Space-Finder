@@ -1,8 +1,4 @@
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 <% if user_signed_in?%>
 
@@ -22,7 +18,14 @@
 		<h3><a href="/neighborhoods/<%= neighborhood.id %>"><%= neighborhood.name %></a></h3><br>
 
 		
-		<a href= "/neighborhoods/<%= neighborhood.id %>"> <%= image_tag(neighborhood.photo_url) %> </a>
+		<a href= "/neighborhoods/<%= neighborhood.id %>"> <%= image_tag(neighborhood.photo_url, :size =>"500x200") %> <%= image_tag(neighborhood.photo2_url, :size =>"500x200") %> </a>
+		<br/>
+		<br/>
+		<div id="description">
+
+		<p> <%= neighborhood.description %></p>
+
+		</div>
 
 
 

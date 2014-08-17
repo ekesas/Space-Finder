@@ -22,9 +22,9 @@ gem 'devise'
 
 gem 'rspec-rails'
 
-gem 'open-weather'
-
 gem 'searchkick'
+
+gem 'activeadmin', github: 'activeadmin/active_admin'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

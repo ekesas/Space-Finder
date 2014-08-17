@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  devise_for :users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
 
   root 'spaces#home'
 
-  get '/search' => 'search#search'
+  get '/spaces/how' => 'spaces#how'
+
+  get '/spaces/about' => 'spaces#about'
 
   get '/spaces' =>'spaces#index'
 

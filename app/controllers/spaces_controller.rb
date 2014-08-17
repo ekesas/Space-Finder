@@ -4,8 +4,14 @@ class SpacesController < ApplicationController
 
   def index
 
-			@spaces=Space.all
+	if params[:search]
+    @spaces = Space.search(params[:search]).order("created_at DESC")
+  else
+    @spaces = Space.all.order('created_at DESC')
+  end
 
+			@spaces=Space.all
+			# @spaces = @spaces.where("neighborhood like ?", "%#{params[:search]}%")
 			@spaces = Space.paginate :page =>params[:page], :per_page => 4
 	end 
 

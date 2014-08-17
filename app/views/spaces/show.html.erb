@@ -1,42 +1,39 @@
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
-<h4><a href="/neighborhoods/"> Back to Neighborhoods </a> <br></h4> <br>
 
-<h4><a href="/spaces"> Back to Spaces </a> <br></h4><br>
+<h3><a href="/neighborhoods/" id="navback"> Back to Neighborhoods </a> <br></h3>
 
-<div id="row"
+<h3><a href="/spaces" id="navback"> Back to Spaces </a> <br></h3><br>
+
+<div id="row">
 		<div id="col-md-8">
 
-<%= image_tag(@space.photo_url, :size => "660x660") %> <br>
-		</div>
+				<h2><%= @space.name %> </h2><br>
 
-<div id="col-md-4">		
+				<%= image_tag(@space.photo_url, :size => "550x550") %> <br>
 
 
-	<h2><h4>Name:</h4><%= @space.name %> </h2><br>
+		</div>		
+</div>
+
+<div id="col-md-3">	
+
+	<div id="space_info">
+
 	<h4>Address:</h4><%= @space.address%> <br>
-	<h4>Neighborhood:</h4><%= @space.neighborhood%> <br>
+	<h4>Neighborhood:</h4><%= @space.neighborhood.name%> <br>
 	<h4>Square Feet:</h4><%= @space.sq_footage%> <br>
 	<h4>Rates:</h4><%= @space.rate%> <br>
 	<h4>Contact info:</h4><%= @space.contact%> <br>
-	<h4>Features:</h4><br>
 	<%= @space.features%> 
 
-	<%= image_tag(@space.photo_url1, :size => "260x180") %>
-	<%= image_tag(@space.photo_url2, :size => "260x180") %>
-	<%= image_tag(@space.photo_url3, :size => "260x180") %>
-	<%= image_tag(@space.photo_url4, :size => "260x180") %>
+	</div> <br/>
+	<br />
 
-
+	<%= image_tag(@space.photo_url1, :size => "260x220") %>
+	<%= image_tag(@space.photo_url2, :size => "260x220") %>
+	<%= image_tag(@space.photo_url3, :size => "260x220") %>
+	<%= image_tag(@space.photo_url4, :size => "260x220") %>
 	<br>
 	<br>
-</div>
-
-</div>
-
-	<input type="button" value="Contact Owner for additional info" class="btn primary">
+	<a href= "<%@space.contact%>"><input type="button" value="Contact Owner for additional info" class="btn primary"> </a><br >
+	<br >
