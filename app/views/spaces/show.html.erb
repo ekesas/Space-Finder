@@ -20,7 +20,7 @@
 	<div id="space_info">
 
 	<h4>Address:</h4><%= @space.address%> <br>
-	<h4>Neighborhood:</h4><%= @space.neighborhood_id%> <br>
+	<h4>Neighborhood:</h4><%= @space.neighborhood.name%> <br>
 	<h4>Square Feet:</h4><%= @space.sq_footage%> <br>
 	<h4>Rates:</h4><%= @space.rate%> <br>
 	<h4>Contact info:</h4><%= @space.contact%> <br>
@@ -28,6 +28,34 @@
 
 	</div> <br/>
 	<br />
+
+	<div class="reviews">
+
+				<%= form_for Review.new do |f| %>
+		  
+
+		  <div class="field">
+		    <%= f.label :author %><br>
+		    <%= f.text_field :author %>
+		  </div>
+		  <div class="field">
+		    <%= f.label :content %><br>
+		    <%= f.text_field :content %>
+		  </div>
+		  <div class="field">
+		    <%= f.label :rating %><br>
+		    <%= f.text_field :rating %>
+		  </div>
+		  <div class="field">
+		    <%= f.label :space_id %><br>
+		    <%= f.text_field :space_id %>
+		  </div>
+		  <div class="actions">
+		    <%= f.submit %>
+		  </div>
+		  <%end %>
+
+</div>
 
 	<%= image_tag(@space.photo_url1, :size => "260x220") %>
 	<%= image_tag(@space.photo_url2, :size => "260x220") %>

@@ -48,7 +48,7 @@ Rails.application.routes.draw do
 
   get '/spaces/about' => 'spaces#about'
 
-  resources :users, only: [:edit]
+  
 
 
 
