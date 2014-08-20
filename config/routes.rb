@@ -1,21 +1,18 @@
 Rails.application.routes.draw do
 
-  devise_for :users, ActiveAdmin::Devise.config
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  devise_for :users
   ActiveAdmin.routes(self)
 
   root 'spaces#home'
-
-  get '/spaces/how' => 'spaces#how'
-
-  get '/spaces/about' => 'spaces#about'
 
   get '/spaces' =>'spaces#index'
 
   get '/spaces/new' => 'spaces#new'
 
-  post '/spaces' =>'spaces#create'
+  post '/spaces/' =>'spaces#create'
 
-  get'/spaces/:id' =>'spaces#show', as: :space
+  get '/spaces/:id' =>'spaces#show', as: :space
 
   get '/spaces/:id/edit' => 'spaces#edit'
 
@@ -23,7 +20,7 @@ Rails.application.routes.draw do
 
   delete '/spaces/:id' => 'spaces#destroy'
 
-
+   
 
   get '/neighborhoods' =>'neighborhoods#index'
 
@@ -40,7 +37,17 @@ Rails.application.routes.draw do
   delete '/neighborhoods/:id' => 'neighborhoods#destroy'
 
 
-resources :api
+  get '/spaces/how' => 'spaces#how'
+
+  get '/spaces/contact' => 'spaces#contact'
+
+  get '/spaces/about' => 'spaces#about'
+
+  resources :users, only: [:edit]
+
+
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

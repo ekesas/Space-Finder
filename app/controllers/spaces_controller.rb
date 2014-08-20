@@ -39,9 +39,12 @@ class SpacesController < ApplicationController
 	end
 
 	def edit
-		@space =Space.find_by(:id => params[:id])
-	end
 
+		@space =Space.find_by(:id => params[:id])
+		
+	end 
+		
+	
 	def update
 
 		@space =Space.find_by(:id => params[:id])

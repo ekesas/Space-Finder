@@ -1,7 +1,14 @@
 
 <% if user_signed_in? %>
 
+<h3><a href="/" id="navback"> <span class="glyphicon glyphicon-chevron-left"></span>Home </a> <br></h3>
+
+<h3><a href="/neighborhoods" id="navback"> <span class="glyphicon glyphicon-chevron-left"></span> Neighborhoods</a> <br></h3><br>
+
+
 <div id="hoods">
+
+	
 
 	<h2> Spaces Spaces Spaces!!!</h2>
 
@@ -12,7 +19,7 @@
 <% @spaces.each do |space|%>
 
 <h3><a href="/spaces/<%= space.id %> "<h3><%=space.name%></h3><br>
-<%= image_tag(space.photo_url, :size => "400x400", :onclick => "photoSwitch") %>
+<%= image_tag(space.photo_url, :size => "600x400", :onclick => "photoSwitch") %>
 <br>
 	<h3> Location:</h3><h4> <%=space.neighborhood.name%><h4><br>
 	<h3>Rate: </h3> <%=space.rate%><br>
