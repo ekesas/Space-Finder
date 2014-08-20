@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140820141959) do
+=======
+ActiveRecord::Schema.define(version: 20140817203355) do
+>>>>>>> navbar
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -53,6 +57,7 @@ ActiveRecord::Schema.define(version: 20140820141959) do
     t.string   "photo_url"
     t.string   "photo2_url"
     t.text     "description"
+<<<<<<< HEAD
   end
 
   create_table "reviews", force: true do |t|
@@ -62,6 +67,8 @@ ActiveRecord::Schema.define(version: 20140820141959) do
     t.string   "space_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+=======
+>>>>>>> navbar
   end
 
   create_table "spaces", force: true do |t|
