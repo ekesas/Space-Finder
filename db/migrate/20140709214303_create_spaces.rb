@@ -3,7 +3,6 @@ class CreateSpaces < ActiveRecord::Migration
     create_table :spaces do |t|
       t.string :name
       t.string :address
-      t.string :neighborhood
       t.string :sq_footage
       t.string :features
       t.string :photos
