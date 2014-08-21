@@ -139,6 +139,9 @@ GEM
       activemodel
       elasticsearch (>= 1)
       hashie
+    seed_dump (3.1.0)
+      activerecord
+      activesupport
     social-share-button (0.1.6)
       coffee-rails
       sass-rails
@@ -189,6 +192,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   searchkick
+  seed_dump
   social-share-button (~> 0.1.6)
   spring
   turbolinks
