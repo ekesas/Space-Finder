@@ -6,9 +6,16 @@ has_many :reviews
 
 belongs_to :user
 
+validates_presence_of :name
+
 
 def self.search(query)
-  where("name like ?", "%#{query}%") 
+  spaces = where("name like ?", "%#{query}%").order("created_at DESC")
+  neighborhood = Neighborhood.find_by(:name => query)
+  if neighborhood
+  	spaces = spaces + neighborhood.spaces.order("created_at DESC")
+  end
+  return spaces
 end
 
 end

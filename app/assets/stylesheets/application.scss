@@ -11,8 +11,10 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require social-share-button
  *= require_self
  */
+
 
 /*#header{position:fixed; width:1000px; margin-top:0px; height:100px; background-color:#0B173B; }*/
 
@@ -102,6 +104,12 @@ footer a:hover {
 
 img{border:1px solid white;}
 
+#social-share-button-facebook {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("/social/facebook.png") no-repeat;
+}
 
 
 

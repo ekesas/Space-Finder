@@ -24,7 +24,9 @@ gem 'rspec-rails'
 
 gem 'searchkick'
 
-gem 'activeadmin', github: 'activeadmin/active_admin'
+gem 'dotenv-rails'
+
+gem 'social-share-button', '~> 0.1.6'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

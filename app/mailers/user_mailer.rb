@@ -1,9 +1,7 @@
 class UserMailer < ActionMailer::Base
-  default from: "from@example.com"
-
-  	def welcome_email(user)
+	def contact_email(current_user, user, subject, comments)
     @user = user
-    @url  = 'http://example.com/login'
-    mail(to: @user.email, subject: 'Welcome to My Awesome Site')
-  	end
+    @comments = comments
+    mail(from: current_user.email, to: @user.email, subject: subject)
+	end
 end

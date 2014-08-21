@@ -1,21 +1,25 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+
   resources :reviews
 
-  devise_for :users, ActiveAdmin::Devise.config
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  # devise_for :users
+  
 
-  ActiveAdmin.routes(self)
-
-  root 'spaces#home'
+  root 'spaces#home' 
 
   get '/spaces' =>'spaces#index'
 
   get '/spaces/new' => 'spaces#new'
 
   post '/spaces/' =>'spaces#create'
+
+  get '/how-it-works' => 'spaces#how'
+
+  get '/spaces/:user_id/contact' => 'spaces#contact'
+
+  get '/spaces/about' => 'spaces#about'
 
   get '/spaces/:id' =>'spaces#show', as: :space
 
@@ -24,6 +28,9 @@ Rails.application.routes.draw do
   patch '/spaces/:id' => 'spaces#update'
 
   delete '/spaces/:id' => 'spaces#destroy'
+
+  
+    
 
    
 
@@ -41,12 +48,12 @@ Rails.application.routes.draw do
 
   delete '/neighborhoods/:id' => 'neighborhoods#destroy'
 
+  post '/contact' => 'contacts#contact'
 
-  get '/spaces/how' => 'spaces#how'
 
-  get '/spaces/contact' => 'spaces#contact'
+ 
 
-  get '/spaces/about' => 'spaces#about'
+  
 
   
 

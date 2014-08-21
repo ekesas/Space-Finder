@@ -4,15 +4,13 @@ class SpacesController < ApplicationController
 
   def index
 
-	if params[:search]
-    @spaces = Space.search(params[:search]).order("created_at DESC")
-  else
-    @spaces = Space.all.order('created_at DESC')
-  end
+		if params[:search]
+	    @spaces = Space.search(params[:search])
+	  else
+	    @spaces = Space.all.order('created_at DESC')
+	  end
 
-			@spaces=Space.all
-			# @spaces = @spaces.where("neighborhood like ?", "%#{params[:search]}%")
-			@spaces = Space.paginate :page =>params[:page], :per_page => 4
+		# @spaces = Space.paginate :page =>params[:page], :per_page => 4
 	end 
 
 	def show 
@@ -40,8 +38,10 @@ class SpacesController < ApplicationController
 
 	def edit
 
-		@space =Space.find_by(:id => params[:id])
 		
+		@space =Space.find_by(:id => params[:id])
+
+	
 	end 
 		
 	
@@ -61,6 +61,10 @@ class SpacesController < ApplicationController
 
 		redirect_to'/spaces'
 	end 
+
+	def contact
+		@user_id = params[:user_id]
+	end
 
 end 
 

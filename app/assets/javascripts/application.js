@@ -14,18 +14,21 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
+//= require social-share-button
 //= require_tree .
 
-var photos = [photo_url, photo_url1, photo_url2, photo_url3, photo_url4]
 
-function photoSwitch(){
 
-	clickedPhoto=[0]; 
-	photos[0] = photos[4]
-	photos[4] = photos[3]
-	photos[3] = photos[2]
-	photos[2] = photos[1]
+// var photos = [photo_url, photo_url1, photo_url2, photo_url3, photo_url4]
 
-	console.log("Photos");
+// function photoSwitch(){
 
-}
+// 	clickedPhoto=[0]; 
+// 	photos[0] = photos[4]
+// 	photos[4] = photos[3]
+// 	photos[3] = photos[2]
+// 	photos[2] = photos[1]
+
+// 	console.log("Photos");
+
+// }

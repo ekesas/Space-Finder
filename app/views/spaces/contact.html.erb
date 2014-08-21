@@ -1,6 +1,6 @@
-<form enctype="text/plain" method="get" action="mailto:webdesign@aboutguide.com">
-Your First Name: <input type="text" name="first_name"><br>
-Your Last Name: <input type="text" name="last_name"><br>
-Comments: <textarea rows="5" cols="30" name="comments"></textarea>
-<input type="submit" value="Send">
-</form>
+<%= form_tag("/contact") do %>
+	<input type="hidden" value="<%= @user_id %>" name="user_id">
+	<textarea rows="2" cols="130" name="subject" placeholder="Subject"></textarea>
+	<textarea rows="20" cols="130" name="comments"></textarea><br>
+	<input type="submit" value="Send">
+<% end %>

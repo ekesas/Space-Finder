@@ -42,8 +42,8 @@
           <% end %> <br />
           
           <%= form_tag(spaces_path, :method => "get", id: "search-form") do %>
-          <%= text_field_tag :search, params[:search], placeholder: "Search Spaces" %>
-          <%= submit_tag "Search", :name => nil %>
+            <%= text_field_tag :search, params[:search], placeholder: "Search Spaces" %>
+            <%= submit_tag "Search", :name => nil %>
           <% end %>
           
           <ul class="nav navbar-nav navbar-right">
@@ -92,7 +92,7 @@
   <div class="container center">
     <div class="row">
       <div class="col-md-3">
-        <a href= "/spaces/how">How it works</a>
+        <a href= "/how-it-works">How it works</a>
       </div>
       <div class="col-md-3">
         <a href= "/spaces/about">About Us</a>
