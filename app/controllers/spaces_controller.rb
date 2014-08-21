@@ -1,5 +1,6 @@
 
 class SpacesController < ApplicationController
+	respond_to :html, :json, :xml
 	
 
   def index
@@ -9,6 +10,8 @@ class SpacesController < ApplicationController
 	  else
 	    @spaces = Space.all.order('created_at DESC')
 	  end
+	  
+	  respond_with(@spaces)
 
 		# @spaces = Space.paginate :page =>params[:page], :per_page => 4
 	end 
@@ -16,6 +19,7 @@ class SpacesController < ApplicationController
 	def show 
 
 		@space = Space.find_by(:id => params[:id])
+		respond_with(@space)
 
 	end 
 
