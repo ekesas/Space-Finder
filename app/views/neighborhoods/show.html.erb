@@ -1,5 +1,4 @@
 
-
 <h3><a href="/neighborhoods/"><%= @neighborhood.name%></h3></a>
 	
 <h2><a href="/neighborhoods/<%= @neighborhood.id %>" <%= @neighborhood.name%> </a></h2>
@@ -10,7 +9,21 @@
  	<h3><a href="/spaces/<%= space.id %>"> <%=space.name%></a></h3><br>
 
 	<a href= "/spaces/<%= space.id %>"> <%= image_tag(space.photo_url, :size => "350x250") %> </a>
+
+	<%= image_tag(space.photo_url4, :size => "350x250") %> 
+
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 	<%end%> 
+
+	<br>
+	<br>
+	<br>
 	
 
 

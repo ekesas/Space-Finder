@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 gem 'bootstrap-sass'
 
+gem 'font-awesome-sass'
+
 gem 'will_paginate-bootstrap'
 
 gem 'devise'

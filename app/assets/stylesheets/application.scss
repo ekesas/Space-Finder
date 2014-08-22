@@ -93,14 +93,14 @@ footer a:hover {
 }
 
 #navback{
-	color:black;
+	color:black; font-family: 'Corben';
 }
 
 .how1{border: 1px solid #170B3B;}
 
 #space_info{background-color:#D8D8D8; width:600px;}
 
-#description{background-color:#D8D8D8; width:1000px;}
+#description{background-color:#C2E0FF; width:1000px;}
 
 img{border:1px solid white;}
 
@@ -111,6 +111,13 @@ img{border:1px solid white;}
 	background: url("/social/facebook.png") no-repeat;
 }
 
+
+#intro p{font-size:18px;}
+
+h3{font-family: 'Corben'; font-size:28px;
+}
+
+a{color:black;}
 
 
 
