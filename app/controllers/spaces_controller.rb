@@ -7,13 +7,14 @@ class SpacesController < ApplicationController
 
 		if params[:search]
 	    @spaces = Space.search(params[:search])
+
+	     @spaces = Space.paginate :page =>params[:page], :per_page => 4
 	  else
 	    @spaces = Space.all.order('created_at DESC')
 	  end
 	  
 	  respond_with(@spaces)
 
-		# @spaces = Space.paginate :page =>params[:page], :per_page => 4
 	end 
 
 	def show 
@@ -72,6 +73,3 @@ class SpacesController < ApplicationController
 	end
 
 end 
-
-
-
