@@ -42,11 +42,12 @@ class SpacesController < ApplicationController
 
 	def edit
 
+		# if @space.user_id == user.signed_in
+
 		
 		@space =Space.find_by(:id => params[:id])
 
-	
-	end 
+	end
 		
 	
 	def update
