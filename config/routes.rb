@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   get '/how-it-works' => 'spaces#how'
 
+  get '/terms' => 'spaces#terms'
+
   get '/spaces/:user_id/contact' => 'spaces#contact'
 
   get '/spaces/about' => 'spaces#about'
