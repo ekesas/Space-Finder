@@ -31,7 +31,8 @@ a {
 body {
 	/*width: 1200px; */
 	/*margin: auto; */
-	background-image: image-url("Chicago2.jpg"); 
+
+	background-color:#D8D8D8;
 	background-attachment: fixed;
 	background-size:cover; 
 	color:black;
@@ -46,7 +47,6 @@ body {
 #logo1{font-family:Arial; font-size:50px; background-color:#0B173B; height:99px;
 }
 
-h3{font-family:Arial; color:black;}
 
 #container{
 	/*width:1000px;*/
@@ -98,9 +98,11 @@ footer a:hover {
 
 .how1{border: 1px solid #170B3B;}
 
-#space_info{background-color:#D8D8D8; width:600px;}
+#space_info{background-color:white; width:600px; text-align:left;}
 
-#description{background-color:#C2E0FF; width:1000px;}
+#description1{background-color:white; width:1140px; font-family:Simple Print;font-size:45px;}
+
+
 
 img{border:1px solid white;}
 
@@ -114,16 +116,23 @@ img{border:1px solid white;}
 
 #intro p{font-size:18px;}
 
-h3{font-family: 'Corben'; font-size:28px;
+h3{font-family:PerryGothic; 
+}
+
+h2{font-family:PerryGothic; 
 }
 
 a{color:black;}
 
 #how1{background-color:white;}
 
-button{background-color:#3366CC;}
+button{background-color:#585858; font-family:PerryGothic; font-size:15px;}
 
-input{background-color:#3366CC;}
+input{background-color:#585858}
+
+#welcomemsg{font-family:PerryGothic; font-size:40px; text-align:center;}
+
+#description{font-family:Simple Print; font-size:25px; width:1000px;}
 
 
 

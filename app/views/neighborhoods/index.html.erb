@@ -4,7 +4,9 @@
 
 	<div id="hoods">
 
-	<h2> Spaces by Neighborhood!!!</h2>
+	<h2 id="welcomemsg"> Stagefinder Chicago</h2>
+
+	<h4>Search spaces by neighborhoods</h4>
 
 
 	</div> <br>
@@ -38,7 +40,16 @@
 	<% end %>
 <% end %> <br>
 
-<%= will_paginate @neighborhoods %>
+<%= will_paginate @neighborhoods, :page_links => false %>
+
+<!-- <div class="digg_pagination">
+    <div class="page_info">
+      <%= page_entries_info @neighborhoods %>
+    </div>
+    <%= will_paginate @neighborhoods, :container => false %>
+</div>
+
+ -->
 
 <% if !user_signed_in? %>
 <p> Please sign in to view our available spaces by neighborhood. </p>
