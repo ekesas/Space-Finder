@@ -1,38 +1,37 @@
-
+<div id="wrapper1">
 
 <% if user_signed_in?%>
 
 	<div id="hoods">
 
-	<h2 id="welcomemsg"> Stagefinder Chicago</h2>
+	
+	<h4 id="hoodesc" >Search spaces by neighborhoods</h4>
 
-	<h4>Search spaces by neighborhoods</h4>
 
-
-	</div> <br>
+	</div> 
 
 	<br>
 
-	<h3><a href="/" id="navback"> <span class="glyphicon glyphicon-chevron-left"><button type ="button"> </span>Home </button> </a> <br></h3>
+	<h3><a id="hoodesc" href="/" id="navback"> <span class="glyphicon glyphicon-chevron-left"><button type ="button"> </span>Home </button> </a> <br></h3>
 
-	<h3><a href="/spaces" id="navback"> <span class="glyphicon glyphicon-chevron-left"></span><button type ="button">Spaces </button></a> <br></h3><br>
+	<h3><a id="hoodesc" href="/spaces" id="navback"> <span class="glyphicon glyphicon-chevron-left"></span><button type ="button">Spaces </button></a> <br></h3><br>
 
 
-	<p> Click on the image to view all the Spaces in the neighborhood</p>
+	<p id="hoodesc"> Click on the image to view all the Spaces in the neighborhood</p>
 
 
 	<%@neighborhoods.each do |neighborhood|%>
 
 	 
-		<h3><a href="/neighborhoods/<%= neighborhood.id %>"><%= neighborhood.name %></a></h3><br>
+		<h3><a id="hoodesc1" href="/neighborhoods/<%= neighborhood.id %>"><%= neighborhood.name %></a></h3><br>
 
 		
-		<a href= "/neighborhoods/<%= neighborhood.id %>"> <%= image_tag(neighborhood.photo_url, :size =>"500x200") %> <%= image_tag(neighborhood.photo2_url, :size =>"500x200") %> </a>
+		<a id="hoodesc" href= "/neighborhoods/<%= neighborhood.id %>"> <%= image_tag(neighborhood.photo_url, :size =>"500x200") %> <%= image_tag(neighborhood.photo2_url, :size =>"500x200") %> </a>
 		<br/>
 		<br/>
 		<div id="description">
 
-		<p> <%= neighborhood.description %></p>
+		<p id="hoodesc"> <%= neighborhood.description %></p>
 
 		</div>
 
@@ -54,3 +53,5 @@
 <% if !user_signed_in? %>
 <p> Please sign in to view our available spaces by neighborhood. </p>
 <%end %>
+
+</div>

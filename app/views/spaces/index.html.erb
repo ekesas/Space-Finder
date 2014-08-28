@@ -1,12 +1,10 @@
-
+<div class="container1">
 <% if user_signed_in? %>
 
-<h2 id="welcomemsg"> Stagefinder Chicago</h2>
 
+<h3><a id="hoodesc1" href="/" id="navback"> <span class="glyphicon glyphicon-chevron-left"><button type="button"> </span>Home </button> </a> <br></h3>
 
-<h3><a href="/" id="navback"> <span class="glyphicon glyphicon-chevron-left"><button type="button"> </span>Home </button> </a> <br></h3>
-
-<h3><a href="/neighborhoods" id="navback"> <span class="glyphicon glyphicon-chevron-left"></span> <button type ="button"> Neighborhoods </button> </a> <br></h3><br>
+<h3><a id="hoodesc1" href="/neighborhoods" id="navback"> <span class="glyphicon glyphicon-chevron-left"></span> <button type ="button"></span> Neighborhoods </button> </a> <br></h3><br>
 
 
 <div id="hoods">
@@ -19,14 +17,14 @@
 
 <% @spaces.each do |space|%>
 
-<h3><a href="/spaces/<%= space.id %> "<h3><%=space.name%></h3><br>
-<%= image_tag(space.photo_url, :size => "600x400", :onclick => "photoSwitch") %>
+<h3><a id="hoodesc1" href="/spaces/<%= space.id %> "<h3><%=space.name%></h3><br>
+<%= image_tag(space.photo_url, :size => "600x400") %>
 <br>
 	<% if space.neighborhood %>
-		<h3> Location:</h3><h4> <%=space.neighborhood.name%><h4><br>
+		<h4> Location:</h4><h4> <%=space.neighborhood.name%><h4><br><span>
 	<% end %>
-	<h3>Rate: </h3> <%=space.rate%><br>
-	<a href="/spaces/<%= space.id %> "><input type="button" value="Click here for more info" <a/>
+	<h3 id="hoodesc1">Rate: </h3> <%=space.rate%><br>
+	<a href="/spaces/<%= space.id %> "><input type="button" value="Click here for more info"> <a/></span>
 
 <% end %>
 <% end %> <br>
@@ -36,5 +34,7 @@
 <p>Please sign in to view our available spaces</p>
 
 <% end %>
+
+</div>
 
 

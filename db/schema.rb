@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20140820141959) do
-=======
-ActiveRecord::Schema.define(version: 20140817203355) do
->>>>>>> navbar
+ActiveRecord::Schema.define(version: 20140827171702) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -57,18 +53,13 @@ ActiveRecord::Schema.define(version: 20140817203355) do
     t.string   "photo_url"
     t.string   "photo2_url"
     t.text     "description"
-<<<<<<< HEAD
   end
 
   create_table "reviews", force: true do |t|
-    t.string   "author"
-    t.string   "content"
-    t.string   "rating"
-    t.string   "space_id"
+    t.string   "body"
     t.datetime "created_at"
     t.datetime "updated_at"
-=======
->>>>>>> navbar
+    t.string   "space_id"
   end
 
   create_table "spaces", force: true do |t|
@@ -88,6 +79,9 @@ ActiveRecord::Schema.define(version: 20140817203355) do
     t.string   "photo_url3"
     t.string   "photo_url4"
     t.string   "user_id"
+    t.string   "daily_rate"
+    t.string   "Weekly_rate"
+    t.string   "monthly_rate"
   end
 
   create_table "users", force: true do |t|

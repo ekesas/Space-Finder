@@ -27,6 +27,8 @@ Rails.application.routes.draw do
 
   get '/spaces/:id/edit' => 'spaces#edit'
 
+  get 'connnect' => 'spaces#connect'
+
   patch '/spaces/:id' => 'spaces#update'
 
   delete '/spaces/:id' => 'spaces#destroy'

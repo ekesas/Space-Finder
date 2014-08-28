@@ -1,18 +1,33 @@
 
+
 <h2 id="welcomemsg"> Stagefinder Chicago</h2>
 
-<h3><a href="/neighborhoods/"><%= @neighborhood.name%></h3></a>
+<h3><a id="hoodesc1" href="/neighborhoods/"><%= @neighborhood.name%></h3></a>
 	
 <h2><a href="/neighborhoods/<%= @neighborhood.id %>" <%= @neighborhood.name%> </a></h2>
 
 
 	<% @spaces.each do |space| %>
 
- 	<h3><a href="/spaces/<%= space.id %>"> <%=space.name%></a></h3><br>
+ 	<h3><a id="hoodesc1" href="/spaces/<%= space.id %>"> <%=space.name%></a></h3><br>
 
-	<a href= "/spaces/<%= space.id %>"> <%= image_tag(space.photo_url, :size => "350x250") %> </a>
+	<a id="hoodesc1" href= "/spaces/<%= space.id %>"> <%= image_tag(space.photo_url, :size => "450x350") %> </a>
+	<span li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rent this space for only<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><%= space.daily_rate%> Per Day</li>
+                  <li><%= space.Weekly_rate%> Per Week</li>
+                  <li><%= space.monthly_rate%> Per Month</li>
+                </ul> 
+  </span>            
 
-	<%= image_tag(space.photo_url4, :size => "350x250") %> 
+
+                  
+		 
+		<a id="hoodesc1" href="/spaces/<%= space.id %> "><button type="button"> More Info </button></a>
+
+		
+		
 
 
 
@@ -26,6 +41,9 @@
 	<br>
 	<br>
 	<br>
+
+</div>
+
 	
 
 

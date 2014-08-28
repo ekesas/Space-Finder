@@ -8,10 +8,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+
+    <script src="https://ajax.googleleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js">
+  </script>
+  <script>
+    function TextController($scope){
+        $scope.someText = 'Enjoy the photos';
+
+    }
+  </script>
+  
 </head>
 
-
 <body>
+
+
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -56,10 +67,9 @@
                   <li><a href="/">Home</a></li>
                   <li><a href="/neighborhoods/">Neighborhoods</a></li>
                   <li><a href="/spaces/">Spaces</a></li>
-                  
-                  <li><a href="/">Square Footage</a></li>
+                  <!-- <li><a href="/">Square Footage</a></li>
                   <li><a href="/">Features</a></li>
-                  <li><a href="/">Rate</a></li>
+                  <li><a href="/">Rate</a></li> -->
                   <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
                 <% end %>
               </ul>
@@ -85,6 +95,8 @@
     </div>
   </div>
 
+
+
 <footer class="footer">
   <div class="container center">
     <div class="row">
@@ -102,7 +114,7 @@
         <a href= "/terms">Terms and Contitions</a>
       </div>
       <div class="col-md-3">
-        <a href= "/terms">Connect with Us</a>
+        <a href= "/">Connect with Us</a>
       </div>
     </div>
   </div>

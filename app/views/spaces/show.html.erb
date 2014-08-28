@@ -3,15 +3,15 @@
 
 
 
-<h3><a href="/neighborhoods/" id="navback"> <span class="glyphicon glyphicon-chevron-left"></span><button type="button">Neighborhoods </button></a> <br></h3>
+<h3><a id="hoodesc1" href="/neighborhoods/" id="navback"> <span class="glyphicon glyphicon-chevron-left"></span><button type="button">Neighborhoods </button></a> <br></h3>
 
-<h3><a href="/spaces" id="navback"> <span class="glyphicon glyphicon-chevron-left"></span> <button type="button">Spaces </button> </a> <br></h3><br>
+<h3><a id="hoodesc1" href="/spaces" id="navback"> <span class="glyphicon glyphicon-chevron-left"></span> <button type="button">Spaces </button> </a> <br></h3><br>
 
 <div id="row">
 		<div id="col-md-8">
 
 
-				<h2><%= @space.name %> </h2><br>
+				<h2 id="hoodesc1" ><%= @space.name %> </h2><br>
 
 				<%= image_tag(@space.photo_url, :size => "600x400" ) %> <br>
 		</div>		
@@ -22,11 +22,14 @@
 
 			<% if @space.neighborhood %>	
 
-			<h4>Address:</h4><%= @space.address%> <br>
-			<h4>Neighborhood:</h4><%= @space.neighborhood.name %> <br>
-			<h4>Square Feet:</h4><%= @space.sq_footage%> <br>
-			<h4>Rates:</h4><%= @space.rate%> <br>
-			<h4>Contact info:</h4><%= @space.contact%> <br>
+			<h5>Address:</h5><%= @space.address%> <br>
+			<h5>Neighborhood:</h5><%= @space.neighborhood.name %> <br>
+			<h5>Square Feet:</h5><%= @space.sq_footage%> <br>
+			<h5>Rates:</h5> 
+			<h5>Daily Rate:</h5> <%= @space.daily_rate%><br>
+			<h5> Weekly Rate:</h5> <%= @space.Weekly_rate%> <br>
+			<h5> Monthly Rate:</h5><%= @space.monthly_rate%> <br>
+			<h5>Contact info:</h5><%= @space.contact%> <br>
 			<%= @space.features%> 
 
 
@@ -38,6 +41,10 @@
 
 </div>
 
+<div ng-app ng-controller="TextController">
+
+	<p>{{ someText }}</p>
+
 	<%= image_tag(@space.photo_url1, :size => "260x220") %>
 	<%= image_tag(@space.photo_url2, :size => "260x220") %>
 	<%= image_tag(@space.photo_url3, :size => "260x220") %>
@@ -45,6 +52,16 @@
 	<br>
 	<br>
 	<a href= "/spaces/<%= @space.user_id %>/contact"><input type="button" value="Contact Owner" class= "btn primary"> </a> 
+
+	<% if @space.user_id = current_user %>
 	
 	<a href= "/spaces/<%= @space.id %>/edit"><input type="button" value="Edit Your Space" class="btn primary"> </a><br >
 	<br >
+
+	<% end %>
+
+</div>
+
+	
+
+ 

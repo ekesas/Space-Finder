@@ -1,23 +1,26 @@
+<%= image_tag("chicagobw.jpg", :size => "1140x450")%>
+<br>
+<br>
+
 <%if user_signed_in?%>
 
-<div id="intro" ng-app>
+<div id="intro">
       
 <% end %>
 
-<h2 id="welcomemsg">Stagefinder Chicago</h2>
-
-<br>
-<br>
-
-<p id="description1"> YourSpace Chicago is a free, database of arts venues and facilities for rent in the Chicagoland area. Find a space for your next performance, rehearsal, audition, class, or special event. Search by location, rate, venue size and much more! <br>
+<p id="description1"> StagefinderChicago is a free, database of arts venues and facilities for rent in the Chicagoland area. Find a space for your next performance, rehearsal, audition, class, or special event. Search by location, rate, venue size and much more! <br>
   <br>
 Please sing up to see all the available options we have or to upload your own venue onto our site for free </p>
+
+
 
 </div>    
 
 <br>
 <br>
 <br>
+
+<%if user_signed_in?%>
 <div class="row">
 
   
@@ -117,6 +120,8 @@ Please sing up to see all the available options we have or to upload your own ve
 <br/>
 <br/>
 <br/>
+
+<%end %>
 
 
 	

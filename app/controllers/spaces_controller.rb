@@ -21,6 +21,7 @@ class SpacesController < ApplicationController
 
 		@space = Space.find_by(:id => params[:id])
 		respond_with(@space)
+		@review = Review.new( :space => @space )
 
 	end 
 
@@ -43,11 +44,15 @@ class SpacesController < ApplicationController
 
 	def edit
 
-		# if @space.user_id == user.signed_in
-
-		
 		@space =Space.find_by(:id => params[:id])
 
+		if current_user.id == @space.user_id
+
+		else 
+
+			flash[:warning] = "Sorry, you cannot edit this space!!"
+
+		end	
 	end
 		
 	
@@ -62,6 +67,7 @@ class SpacesController < ApplicationController
 	end 
 
 	def destroy
+		
 		@space = Space.find_by(:id => params[:id])
 		@space.destroy flash[:sucess] = "Space deleted"
 
