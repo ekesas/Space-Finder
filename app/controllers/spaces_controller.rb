@@ -1,14 +1,15 @@
 
 class SpacesController < ApplicationController
 	respond_to :html, :json, :xml
-	
+
+
 
   def index
 
 		if params[:search]
 	    @spaces = Space.search(params[:search])
 
-	     @spaces = Space.paginate :page =>params[:page], :per_page => 4
+	     # @spaces = Space.paginate :page =>params[:page], :per_page => 4
 	  else
 	    @spaces = Space.all.order('created_at DESC')
 	  end
@@ -21,8 +22,7 @@ class SpacesController < ApplicationController
 
 		@space = Space.find_by(:id => params[:id])
 		respond_with(@space)
-		@review = Review.new( :space => @space )
-
+		
 	end 
 
 
@@ -46,13 +46,13 @@ class SpacesController < ApplicationController
 
 		@space =Space.find_by(:id => params[:id])
 
-		if current_user.id == @space.user_id
+		# if current_user.id == @space.user_id
 
-		else 
+		# else 
 
-			flash[:warning] = "Sorry, you cannot edit this space!!"
+		# 	flash[:warning] = "Sorry, you cannot edit this space!!"
 
-		end	
+		# end	
 	end
 		
 	

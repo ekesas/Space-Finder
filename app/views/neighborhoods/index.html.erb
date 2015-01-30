@@ -5,14 +5,13 @@
 	<div id="hoods">
 
 	
-	<h4 id="hoodesc" >Search spaces by neighborhoods</h4>
+	<h2 id="hoodesc1" >Search spaces by neighborhoods</h2>
 
 
 	</div> 
 
-	<br>
 
-	<h3><a id="hoodesc" href="/" id="navback"> <span class="glyphicon glyphicon-chevron-left"><button type ="button"> </span>Home </button> </a> <br></h3>
+	<h3><a id="hoodesc" href="/" id="navback"> <span class="glyphicon glyphicon-chevron-left"><button type ="button"> </span>Home </button> </a> <br></h3><span>
 
 	<h3><a id="hoodesc" href="/spaces" id="navback"> <span class="glyphicon glyphicon-chevron-left"></span><button type ="button">Spaces </button></a> <br></h3><br>
 
@@ -41,14 +40,6 @@
 
 <%= will_paginate @neighborhoods, :page_links => false %>
 
-<!-- <div class="digg_pagination">
-    <div class="page_info">
-      <%= page_entries_info @neighborhoods %>
-    </div>
-    <%= will_paginate @neighborhoods, :container => false %>
-</div>
-
- -->
 
 <% if !user_signed_in? %>
 <p> Please sign in to view our available spaces by neighborhood. </p>

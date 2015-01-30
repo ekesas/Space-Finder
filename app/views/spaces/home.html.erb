@@ -8,9 +8,11 @@
       
 <% end %>
 
-<p id="description1"> StagefinderChicago is a free, database of arts venues and facilities for rent in the Chicagoland area. Find a space for your next performance, rehearsal, audition, class, or special event. Search by location, rate, venue size and much more! <br>
+<p id="description"> StagefinderChicago is a free, database of arts venues and facilities for rent in the Chicagoland area. Find a space for your next performance, rehearsal, audition, class, or special event. Search by location, rate, venue size and much more! <br>
   <br>
-Please sing up to see all the available options we have or to upload your own venue onto our site for free </p>
+  <%if !user_signed_in?%>
+Please sign up to see all the available options we have or to upload your own venue onto our site for free </p>
+<% end %>
 
 
 
@@ -59,7 +61,7 @@ Please sing up to see all the available options we have or to upload your own ve
     <div class="item">
       <img src="http://a.espncdn.com/photo/2013/0122/chi_wrigley_renderings_05.jpg" img style= "height:450px; width:600px;" alt="neighborhood">
       <div class="carousel-caption">
-          <h2>Wrigleville</h2>
+          <h2>Wrigleyville</h2>
       </div>
     </div>
   </div>

@@ -1,0 +1,373 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201410 will be lost/reset.
+# Last config file used to build this data file was /home/barakaexpressllc/tmp/awstats/awstats.barakaexpressllc.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2022                
+POS_TIME 2703                
+POS_VISITOR 10668               
+POS_DAY 11955               
+POS_DOMAIN 3341                
+POS_LOGIN 3620                
+POS_ROBOT 3775                
+POS_WORMS 4028                
+POS_EMAILSENDER 4159                
+POS_EMAILRECEIVER 4302                
+POS_SESSION 12202               
+POS_SIDER 12398               
+POS_FILETYPES 4437                
+POS_DOWNLOADS 4653                
+POS_OS 4701                
+POS_BROWSER 4810                
+POS_SCREENSIZE 5145                
+POS_UNKNOWNREFERER 5219                
+POS_UNKNOWNREFERERBROWSER 5326                
+POS_ORIGIN 5428                
+POS_SEREFERRALS 5565                
+POS_PAGEREFS 5720                
+POS_SEARCHWORDS 5919                
+POS_KEYWORDS 6071                
+POS_MISC 2367                
+POS_ERRORS 6130                
+POS_CLUSTER 3476                
+POS_SIDER_404 6232                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20141027034541 358 86131 9826464089616
+FirstTime 20141019081104
+LastTime 20141026212536
+LastUpdate 20141027050347 358 0 358 0 0
+TotalVisits 44                  
+TotalUnique 31                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 31                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 6 14 92366 4 9 27531
+2 0 0 0 0 0 0
+3 0 0 0 1 9 136263
+4 3 3 12849 2 3 10265
+5 3 15 5978852 0 0 0
+6 16 34 6149091 5 150 255735
+7 6 30 265328 0 3 1699
+8 9 20 119057 4 9 11079
+9 3 11 80793 0 1 0
+10 1 1 4283 0 0 0
+11 4 44 251812 5 10 12778
+12 0 0 0 0 0 0
+13 6 38 6086659 4 4 6796
+14 5 39 6087998 12 13 20388
+15 0 0 0 0 0 0
+16 1 9 0 0 1 0
+17 0 0 0 0 0 0
+18 0 0 0 3 3 5097
+19 0 0 0 0 0 0
+20 52 292 18401548 7 18 25845
+21 33 285 18412556 15 18 83177
+22 6 89 18216879 23 30 55457
+23 2 10 89648 1 1 4283
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 5
+us 151 921 80147930
+ca 2 2 13868
+cn 1 1 4283
+ru 1 1 81
+bg 1 9 83557
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 3
+googlebot 24 202763 20141027034541 0
+no_user_agent 4 12930 20141021214626 0
+bot[\s_+:,\.\;\/\\-] 1 4283 20141021083912 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 8
+eot 24 71344 0 0
+css 134 222572 0 0
+png 106 227893 0 0
+woff 22 30632 0 0
+html 109 446449 0 0
+jpg 427 77825645 0 0
+js 111 1416182 0 0
+Unknown 1 9002 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 7
+macosx 100
+winlong 8
+winxp 10
+Unknown 1
+winvista 52
+linux 18
+win7 745
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 19
+msie6.0 4
+firefox32.0 34
+firefox15.0 1
+firefox17.0 18
+chrome38.0.2125.104 635
+firefox3.0.3 1
+msie8.0 4
+chrome32.0.1664.3 1
+mozilla 192
+netscape5.0 1
+msie7.0 10
+firefox14.0.1 1
+firefox6.0 1
+chrome27.0.1453 17
+chrome11.0.696.71 2
+Unknown 1
+safari 9
+firefox3.6.13 1
+chrome21.0.1180.89 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+Ruby 20141020100634
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+Ruby 20141020100634
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 103 105
+From1 0 0
+From2 1 1
+From3 1 1
+From4 51 827
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 1
+http://bestwebeditors.com/cgi-bin/promotion.pl 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+206 2 54142
+404 225 382275
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 55
+/css/fonts/TitilliumText22L005-webfont.woff 6 http://www.barakaexpressllc.com/
+/robots.txt 9 -
+/custom_baraka/css/site_styles.css 2 http://www.barakaexpressllc.com/
+/admin.php 2 -
+/private/images/file000550955311.jpg 7 http://www.barakaexpressllc.com/
+/custom_baraka/_js/jquery-1.7.2.min.js 2 http://www.barakaexpressllc.com/
+/css/fonts/TitilliumText22L003-webfont.ttf 6 http://www.barakaexpressllc.com/
+/css/fonts/TitilliumText22L001-webfont.ttf 1 http://www.barakaexpressllc.com/
+/css/fonts/TitilliumText22L001-webfont.eot 1 http://www.barakaexpressllc.com/
+/custom_baraka/images/file00030009680.jpg 2 http://www.barakaexpressllc.com/
+/private/images/file0001757413591.jpg 7 http://www.barakaexpressllc.com/
+/private/images/file00030009680.jpg 7 http://www.barakaexpressllc.com/
+/custom_baraka/_js/barakaexpressllc.js 2 http://www.barakaexpressllc.com/
+/private/css/custom_slider.css 7 http://www.barakaexpressllc.com/
+/private/_js/jquery-1.7.2.min.js 7 http://www.barakaexpressllc.com/
+/css/fonts/TitilliumText22L003-webfont.woff 6 http://www.barakaexpressllc.com/
+/custom_baraka/images/file0001117960982.jpg 2 http://www.barakaexpressllc.com/
+/private/images/file000308999292.jpg 7 http://www.barakaexpressllc.com/
+/private/images/file0001728857809.jpg 7 http://www.barakaexpressllc.com/
+/custom_baraka/images/file000330568599.jpg 2 http://www.barakaexpressllc.com/
+/custom_baraka/images/file0001757413591.jpg 2 http://www.barakaexpressllc.com/
+/css/fonts/TitilliumText22L001-webfont.woff 1 http://www.barakaexpressllc.com/
+/private/css/site_styles.css 7 http://www.barakaexpressllc.com/
+/custom_baraka/css/fonts/TitilliumText22L001-webfont.ttf 1 http://barakaexpressllc.com/
+/custom_baraka/images/file00079963469.jpg 2 http://www.barakaexpressllc.com/
+/private/images/file000330568599.jpg 7 http://www.barakaexpressllc.com/
+/custom_baraka/anythingSlider/jquery.anythingslider.min.js 2 http://www.barakaexpressllc.com/
+/custom_baraka/css/fonts/TitilliumText22L003-webfont.svg 1 http://barakaexpressllc.com/
+/custom_baraka/images/logo.png 2 http://www.barakaexpressllc.com/
+/custom_baraka/css/fonts/TitilliumText22L005-webfont.svg 1 http://barakaexpressllc.com/
+/private/_js/barakaexpressllc.js 7 http://www.barakaexpressllc.com/
+/custom_baraka/css/fonts/TitilliumText22L003-webfont.woff 8 http://www.barakaexpressllc.com/custom_baraka/css/site_styles.css
+/administrator/index.php 1 -
+/private/images/file0001425538258.jpg 7 http://www.barakaexpressllc.com/
+/custom_baraka/css/fonts/TitilliumText22L003-webfont.ttf 8 http://www.barakaexpressllc.com/custom_baraka/css/site_styles.css
+/private/images/logo.png 7 http://www.barakaexpressllc.com/
+/custom_baraka/images/file000550955311.jpg 2 http://www.barakaexpressllc.com/
+/custom_baraka/images/file0001425538258.jpg 2 http://www.barakaexpressllc.com/
+/css/fonts/TitilliumText22L005-webfont.eot 1 http://www.barakaexpressllc.com/
+/custom_baraka/anythingSlider/anythingslider.css 2 http://www.barakaexpressllc.com/
+/css/fonts/TitilliumText22L005-webfont.ttf 6 http://www.barakaexpressllc.com/
+/css/fonts/TitilliumText22L003-webfont.eot 1 http://www.barakaexpressllc.com/
+/administrator/ 1 -
+/custom_baraka/css/fonts/TitilliumText22L001-webfont.svg 1 http://barakaexpressllc.com/
+/custom_baraka/css/fonts/TitilliumText22L001-webfont.woff 1 http://barakaexpressllc.com/
+/private/images/file0001117960982.jpg 7 http://www.barakaexpressllc.com/
+/custom_baraka/images/file000308999292.jpg 2 http://www.barakaexpressllc.com/
+/custom_baraka/css/fonts/TitilliumText22L005-webfont.ttf 8 http://www.barakaexpressllc.com/custom_baraka/css/site_styles.css
+/custom_baraka/images/file0001728857809.jpg 2 http://www.barakaexpressllc.com/
+/custom_baraka/css/fonts/TitilliumText22L005-webfont.woff 8 http://www.barakaexpressllc.com/custom_baraka/css/site_styles.css
+/private/anythingSlider/jquery.anythingslider.min.js 7 http://www.barakaexpressllc.com/
+/wp-login.php 2 -
+/private/anythingSlider/anythingslider.css 7 http://www.barakaexpressllc.com/
+/custom_baraka/css/custom_slider.css 2 http://www.barakaexpressllc.com/
+/private/images/file00079963469.jpg 7 http://www.barakaexpressllc.com/
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 31
+98.230.188.96 97 656 36948827 20141026112045
+97.91.133.192 10 133 24549379 20141026212536
+209.66.70.253 6 8 28690 20141021065825
+205.178.85.22 6 6 2044 20141019090017
+8.28.16.254 3 3 10272 20141026145549
+50.117.87.207 3 3 8647 20141020013048
+15.219.153.75 2 10 83638 20141020011414
+38.100.21.118 2 2 162 20141019131450
+15.219.153.82 2 20 6077807 20141026145549
+166.78.181.113 2 2 8566 20141022045701
+66.194.234.196 2 18 161875 20141020091453
+198.100.153.93 2 2 13868 20141026204528
+64.71.204.58 1 11 5950162 20141026051658
+208.43.251.182 1 1 4283 20141020231101
+69.64.155.184 1 1 4283 20141021091507
+64.71.196.37 1 1 4283 20141023045247
+184.168.224.190 1 1 4283 20141020100634
+93.159.230.39 1 1 81 20141019224728
+54.244.119.38 1 9 85365 20141020233900
+97.74.104.17 1 1 1963 20141019084540
+209.19.189.43 1 1 4283 20141025072712
+69.58.178.57 1 1 4283 20141025071325
+222.76.54.60 1 1 4283 20141025131519
+199.30.228.128 1 1 4283 20141020072500
+207.229.189.116 1 9 85365 20141023110250
+206.80.115.119 1 2 14345 20141021051949
+66.249.93.20 1 17 6072629 20141026200649
+93.155.175.25 1 9 83557 20141020071049
+64.233.172.100 1 1 9585 20141026200648
+207.70.9.97 1 2 14345 20141021051949
+207.70.3.140 1 1 4283 20141023045247
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 8
+20141019 12 15 33935 5
+20141020 15 63 523852 11
+20141021 10 14 65946 5
+20141022 2 10 89648 2
+20141023 3 11 93931 3
+20141024 1 9 85365 1
+20141025 89 648 42951839 7
+20141026 24 164 36405203 10
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+1h+ 2
+5mn-15mn 2
+2mn-5mn 1
+15mn-30mn 2
+0s-30s 36
+30mn-1h 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 8
+/ 107 445237 42 43
+/fonts/TitilliumText22L005-webfont.woff 11 15144 0 0
+/fonts/TitilliumText22L003-webfont.woff 11 15488 0 0
+/fonts/TitilliumText22L001-webfont.eot 8 24384 0 0
+/fonts/TitilliumText22L003-webfont.eot 8 23796 0 0
+/fonts/TitilliumText22L005-webfont.eot 8 23164 0 0
+/test_index.html 2 1212 2 0
+/cpanel 1 9002 0 1
+END_SIDER

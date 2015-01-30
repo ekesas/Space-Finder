@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140827171702) do
+ActiveRecord::Schema.define(version: 20140828034520) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -46,6 +46,13 @@ ActiveRecord::Schema.define(version: 20140827171702) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
+  create_table "comments", force: true do |t|
+    t.text     "body"
+    t.integer  "space_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "neighborhoods", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -53,13 +60,6 @@ ActiveRecord::Schema.define(version: 20140827171702) do
     t.string   "photo_url"
     t.string   "photo2_url"
     t.text     "description"
-  end
-
-  create_table "reviews", force: true do |t|
-    t.string   "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "space_id"
   end
 
   create_table "spaces", force: true do |t|

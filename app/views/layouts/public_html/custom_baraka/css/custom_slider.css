@@ -1,0 +1,48 @@
+.slidePanel a {
+	text-decoration: none;
+    margin-top: 40px;
+    width: 840px;
+	padding: 20px;
+	display: inline-block;
+	background-color: white;
+	border: solid white 10px;
+}
+.slidePanel p {
+	margin-right: 60px;
+	color: black !important;	
+}
+
+div.anythingSlider .anythingWindow {
+	/* remove borders above and below slider */
+	border: none;	
+}
+
+div.anythingSlider .anythingControls {
+	/* reposition controls to top right */
+	position: absolute; 
+	right: 55px;
+	top: 15px;
+}
+
+div.anythingSlider .anythingControls ul a {
+	background: none; /* remove drop shadow	*/
+	border-radius: 0; /*remove rounded corners */
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+div.anythingSlider.activeSlider .anythingControls ul a {
+	background-color: black;
+	color: white;	
+	border: 1px solid black;
+}
+
+div.anythingSlider.activeSlider .anythingControls ul a.cur {
+	background-color: red;
+	color: black;	
+	border: 1px solid black;
+}
+div.anythingSlider.activeSlider .anythingControls ul a:hover {
+	background-color: white;	
+	color: black;
+}

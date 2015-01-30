@@ -7,8 +7,6 @@
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-
     <script src="https://ajax.googleleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js">
   </script>
   <script>
@@ -21,7 +19,6 @@
 </head>
 
 <body>
-
 
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
@@ -45,7 +42,7 @@
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="/users/edit">Edit Your Profile</a></li>
                     <li><a href="/spaces/new">List a Space</a></li>
-                    <li><a href="/spaces">Find a Space</a></li>
+                    <li><a href="/spaces">Find a Space</a></li> 
                 </ul>
               </li>
             </ul>
@@ -78,8 +75,6 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
-  
   <div class="wrapper">
   	<% if notice %>
   	  <p class="alert alert-success"><%= notice %></p>
@@ -94,15 +89,12 @@
 
     </div>
   </div>
-
-
-
 <footer class="footer">
   <div class="container center">
     <div class="row">
 
       <div class="social-share-button">
-      <%= social_share_button_tag("My Site") %>
+      <%= social_share_button_tag("StagefinderChicago") %>
       </div>
       <div class="col-md-3">
         <a href= "/how-it-works">How it works</a>
@@ -111,10 +103,10 @@
         <a href= "/spaces/about">About Us</a>
       </div>
       <div class="col-md-3">
-        <a href= "/terms">Terms and Contitions</a>
+        <a href= "/terms  ">  Terms and Contitions</a>
       </div>
       <div class="col-md-3">
-        <a href= "/">Connect with Us</a>
+        <a href= "/how-it-works">Connect with Us</a>
       </div>
     </div>
   </div>

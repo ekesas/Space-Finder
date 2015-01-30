@@ -1,12 +1,9 @@
 
-
-<h2 id="welcomemsg"> Stagefinder Chicago</h2>
-
-<h3><a id="hoodesc1" href="/neighborhoods/"><%= @neighborhood.name%></h3></a>
+<h3><a id="hoodesc1" class="name" href="/neighborhoods/"><%= @neighborhood.name%></h3></a>
 	
-<h2><a href="/neighborhoods/<%= @neighborhood.id %>" <%= @neighborhood.name%> </a></h2>
+<!-- <h2><a href="/neighborhoods/<%= @neighborhood.id %>" <%= @neighborhood.name%> </a></h2>
 
-
+ -->
 	<% @spaces.each do |space| %>
 
  	<h3><a id="hoodesc1" href="/spaces/<%= space.id %>"> <%=space.name%></a></h3><br>
@@ -19,18 +16,14 @@
                   <li><%= space.Weekly_rate%> Per Week</li>
                   <li><%= space.monthly_rate%> Per Month</li>
                 </ul> 
+
+                
   </span>            
 
 
                   
 		 
 		<a id="hoodesc1" href="/spaces/<%= space.id %> "><button type="button"> More Info </button></a>
-
-		
-		
-
-
-
 	<br>
 	<br>
 	<br>

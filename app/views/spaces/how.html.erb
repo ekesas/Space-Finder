@@ -1,6 +1,6 @@
 <div class="container">
 <div id="how0">
-<h3> Your Space Chicago </h3><br/>
+<h3> Stagefinder Chicago </h3><br/>
 
 <div class="row">
   
@@ -22,20 +22,6 @@
 
 <h3>Who's using Spacefinder?</h3>
 
-<p>Over 2,000 business have listed space on Storefront.</p>
-<ol>
-
-  <li>Craft Fairs</li>
-  <li>Markets</li>
-  <li>Galleries</li>
-  <li>Mall Stores</li>
-  <li>Vacant Spaces</li>
-  <li>Street-Level</li>
-  <li>Store-in-a-Store</li>
-  <li>Kiosks</li>
-  <li>Restaurant Spaces</li>
-
-</ol>
 
 
 
@@ -87,10 +73,28 @@
 
 </div>
 
+<% if user_signed_in? %>
+
 <div class ="col-md-3" id ="how1">
  <h3> Connect with us here</h3>
 
- <%= image_tag("facebook-icon.jpg", :size =>"60x60")%>
+ <a href="https://github.com/ekesas" target="_blank"><%= image_tag("github-octocat.png", :size =>"60x60")%></a>
+
+
+ <a href="https://www.facebook.com/" target="_blank"><%= image_tag("facebook.png", :size =>"60x60")%></a>
+
+ <a href="https://plus.google.com//" target="_blank"><%= image_tag("g+.png", :size =>"60x60")%></a>
+
+
+<a href="https://www.linkedin.com/nhome/" target="_blank"><%= image_tag("LinkedIn.jpg", :size =>"60x60")%></a>
+
+
+<a href="https://twitter.com/" target="_blank"><%= image_tag("tweeter.png", :size =>"60x60")%></a>
+
+<%else %>
+
+<h3>Please sign in to connect with us</h3>
+<%end%>
 
 </div>
 
